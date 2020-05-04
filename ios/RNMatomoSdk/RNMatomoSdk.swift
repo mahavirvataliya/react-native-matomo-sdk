@@ -55,7 +55,7 @@ class RNMatomoSdk: NSObject {
         }
     }
 
-    @objc(setUserId:)
+    @objc(setUserId:resolver:rejecter:)
     func setUserId(
         userId: String,
         resolver: RCTPromiseResolveBlock,
