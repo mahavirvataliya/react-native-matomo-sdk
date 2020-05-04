@@ -57,7 +57,9 @@ class RNMatomoSdk: NSObject {
 
     @objc(setUserId:)
     func setUserId(
-        userId: String
+        userId: String,
+        resolver: RCTPromiseResolveBlock,
+        rejecter: RCTPromiseRejectBlock
     ) -> Void {
         if let tracker = tracker {
             tracker.userId = userId
